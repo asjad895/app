@@ -89,38 +89,8 @@ const Profile = () => {
     }
     successMsg && <p className="success-msg">{successMsg}</p>
   };
-  //test
-  const [values,setValue]=useState();
-  const [editingValue, setEditingValue] = useState(values);
   
-  const onChange = (event) => setEditingValue(event.target.value);
-  
-  const onKeyDown = (event) => {
-    if (event.key === "Enter" || event.key === "Escape") {
-      event.target.blur();
-    }
-  }
-  
-  const onBlur = (event) => {
-    if (event.target.value.trim() === "") {
-      setEditingValue(values);
-    } else {
-      setValue(event.target.value)
-    }
-  }
-  return (
-    <input
-      type="text"
-      aria-label="Field name"
-      value={editingValue}
-      onChange={onChange}
-      onKeyDown={onKeyDown}
-      onBlur={onBlur}
-      value={values}
-      setValue={setValue}
-    />
    
-  );
 };
 
 export default Profile;
