@@ -35,6 +35,8 @@ const UsersTable = () => {
       </table>
     </div>
   );
+
+  // You can add more functionality here as needed
 };
 
 export default UsersTable;
