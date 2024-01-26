@@ -75,8 +75,8 @@
     font-size: 14px;
     font-weight: 300;
     background-color: transparent;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    /* -webkit-appearance: none; */
+    /* -moz-appearance: none; */
   }
   form-header{
     justify-content: center;

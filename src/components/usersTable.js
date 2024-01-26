@@ -21,8 +21,7 @@ const UsersTable = () => {
             <th>Username</th>
             <th>Email</th>
             <th>Password</th>
-            <th>IsVerified</th>
-            {/* Add more columns as needed */}
+            <th>isverified</th>
           </tr>
         </thead>
         <tbody>
@@ -32,7 +31,6 @@ const UsersTable = () => {
               <td>{user.email}</td>
               <td>{user.password}</td>
               <td>{user.isverified}</td>
-              {/* Add more columns as needed */}
             </tr>
           ))}
         </tbody>
